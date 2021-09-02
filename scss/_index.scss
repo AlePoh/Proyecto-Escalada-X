@@ -1,0 +1,154 @@
+/* Grid main*/ 
+.nosotrosGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    gap: 2px;
+    grid-template-areas: 
+        "im1 tex1 tex1"
+        "tex2 tex2 img2"
+    ;
+}
+
+.im1 {
+    grid-area: im1
+}
+
+.tex1 {
+    grid-area: tex1;
+}
+
+.img2{
+    grid-area: img2;
+}
+
+.tex2 {
+    grid-area: tex2;
+}
+.nosotrosGrid__hijoTexto {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+    justify-items: center;
+    align-items: center;  
+    text-align: center;   
+}
+.nosotrosGrid__hijo {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    text-align: center;
+   
+   
+}
+.nosotrosGrid__imagen{
+    display: flex;
+    text-align: center;
+    justify-items: center;
+    margin: 0 auto;
+}
+
+
+ul{   
+    list-style-type: none;
+    
+}
+td{
+    text-align: center;
+    width: 200px;
+    
+}
+th{ 
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+ 
+}
+
+th.bg-dark{
+    color:#fcc300;
+
+}
+
+
+
+.contenedor__Centro{
+    display: flex;
+    
+    justify-content: center;
+    
+}
+
+
+
+
+.divDestacado__enlaces{
+    color:#fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 5px;
+    height: 10px;
+    background-color: grey; /*formato links, tecxto y color de fondo*/ 
+}
+.divDestacado__enlaces:hover{  
+    font-size: 20px;
+    height: 40px;
+    background-color:#ffc300;
+    color:#000;
+    border-radius: 50px;
+    }
+/* Carrusel */
+
+
+.carousel-item img{
+    object-fit: cover;
+    height: 500px;
+    }
+
+    /* Imagen Muro Index*/
+
+
+$index: ( 
+    Outdoor: "https://learn.corel.com/wp-content/uploads/2014/09/sports_photography2.png ",
+    Muro: "https://i.avoz.es//default/2020/02/26/00121582735865470672109/Foto/HF27C10F2_17509.jpg" ,
+    novedad: "https://fundacionetcastillo.com/wp-content/uploads/2019/05/muro2.jpg"
+); 
+
+@each $novedad, $valor in $index {
+    .divDestacados__#{$novedad} {
+        background-image: url($valor);
+        height: 300px;
+        width: 300px;
+        background-repeat: no-repeat;    
+        color:#Fff;
+        text-align: center;
+        margin: 1rem;
+        background-size: cover;
+    }
+}
+
+
+
+$indexHover:( 
+Outdoor: Outdoor,
+Muro: Muro ,
+novedad: novedad
+);
+
+@each $novedad, $valor in $indexHover {
+    .divDestacados__#{$novedad}:hover{
+    color: #FFC300; 
+    transform: scale(1.1);
+    box-shadow: 3px 3px 10px black; 
+    }
+}
+
+
+.divDestacados{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+ }

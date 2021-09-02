@@ -1,0 +1,74 @@
+
+    /* ************ cursos ********** */
+.divcurso{
+    display: flex;
+   justify-content:center;    
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-direction:row;  
+ }
+
+ .divcurso__spamDestacado{ 
+     display: flex; 
+     height: 300px; 
+    letter-spacing: 1px;
+    background-color:#000 ; /*formato texto destacado de etiqueta */
+    color:#FFC300; 
+    font-weight: bold;
+    font-style: italic;
+    margin: 5px;
+    padding: 2rem 0 2rem 0;
+    border: solid #FFC300 1px;
+    border-radius: 8px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.divcurso__h3{
+    font-size: 26px;
+    font-weight: bold;
+    margin: 2rem 0 1rem 2rem;
+
+}
+.divcurso__spam{
+    width: 600px;
+    padding: 10px;
+    margin: 2rem 1rem 2rem 1rem;    
+}
+.divcursoInverso{
+    display: flex;
+    border: solid black 1px;
+    margin: 1rem;
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: center;    
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    
+}
+.divcurso__contenedor{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    border: solid black 1px;
+    margin: 1rem;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+   
+}
+.divcurso__parrafo{
+    width: 80%;
+    text-align: center;
+
+  }
+  
+.divcurso__img{
+    display: flex;    
+    justify-content: center;
+    
+}
+

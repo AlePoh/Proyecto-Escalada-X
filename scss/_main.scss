@@ -1,0 +1,30 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Inicializa  formatpo navegador*/
+}
+body{
+    font-family: 'Spectral SC', serif;
+    background-color:#CCD1D1;
+    color:#1B2631;  /*Color de fondo Body y color texto*/
+}
+
+/* Titulos main */
+.h2Titulo{
+    width: 100%;
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: 3px;
+    background-color: #515A5A ;
+    background-size:200px;/*formato H2 por clase*/
+    background-image: linear-gradient(to bottom, #ccd1d1, #a2a6a7, #7b7d7f, #565658, #333233, #333233, #333233, #333233, #565658, #7b7d7f, #a2a6a7, #ccd1d1);
+    color:#FFC300; 
+    text-transform: uppercase;
+    word-spacing: 3px;
+    margin-top: 2rem;
+    margin-bottom: 2rem ;
+    width:100%;
+   
+}

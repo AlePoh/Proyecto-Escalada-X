@@ -1,0 +1,125 @@
+/* footer*/
+.destacadoFooter{   
+    letter-spacing: 1px;
+    background: linear-gradient(180deg, rgba(204,209,209,1) 0%, rgba(0,0,0,0.9780287114845938) 55%);
+    background-color:#000 ; /*formato texto destacado de etiqueta */
+    color:#FFC300; 
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content:center;
+   height: 100%;
+}
+
+footer p {
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #fff;
+    background-color: black;
+}
+.destacado{   
+    letter-spacing: 1px;
+    background-color:#000 ; /*formato texto destacado de etiqueta */
+    color:#FFC300; 
+    font-weight: bold;
+    font-style: italic;
+   
+      
+}
+
+.divFfooter{
+    display: flex;
+    justify-content: space-between;   
+    background-color: black;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content:space-around ; 
+  
+ }
+ .divFfooter__texto{
+    text-align: justify;
+    text-align: right;
+    margin: 1rem 1rem 2rem 5rem;
+    color: #fff;
+
+}
+
+.divFfooter{
+    display: flex;    
+    align-items: center;
+  justify-items: center;
+ 
+ }
+
+ $redes: ( 
+    instagram: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%),
+    facebook:  radial-gradient(circle, rgba(125,101,242,1) 5%, rgba(0,0,0,1) 100%),
+    youtube: radial-gradient(circle, rgba(238,9,9,0.8183648459383753) 46%, rgba(0,0,0,1) 100%) 
+); 
+
+
+
+
+ @each $redsocial, $valor in $redes {
+    .divFfooter__redes__#{$redsocial}:hover {
+        background-image: $valor;   
+        height: 50px;
+        border-radius: 3px; ;
+    }
+}
+
+@each $red-social in instagram, facebook, youtube {
+    .divFfooter__redes__#{$red-social}{ 
+        display: flex;
+        margin: 1rem;
+         justify-content: center;
+         align-items: center;
+         width: 40px;
+         height: 40px;
+         transition: height 1s ;  
+    }
+ }
+
+ $wym: ( 
+    whatsapp:   radial-gradient(circle, rgba(74,201,89,1) 38%, rgba(10,8,8,0.8183648459383753) 84%),
+    send_mail: radial-gradient(circle, rgba(234,67,53,1) 50%, rgba(187,0,27,1) 75%)
+    ); 
+
+
+
+
+ @each $redsocialwyp, $valor1 in $wym {
+    .divFfooter__#{$redsocialwyp}:hover {
+        background-image: $valor1;   
+        height: 50px;
+        border-radius: 3px; ;
+    }
+}
+
+@each $red-wym in whatsapp, send_mail {
+    .divFfooter__#{$red-wym}{ 
+        display: flex;
+        margin: 1rem;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 30px;
+        transition: height 1s ;  
+    }
+ }
+
+
+
+.divFfooter__redes{
+    display: flex;
+    height: 100px;
+   margin-top: 2rem;
+   margin-right: 1rem;
+    flex-direction: row;    
+    justify-content: flex-end;
+    align-content: space-between;
+}

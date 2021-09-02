@@ -1,0 +1,67 @@
+/* *************outdoor************** */
+
+.sectionOutdoor{
+    /*display: flex;
+     justify-content: space-evenly;
+     flex-direction: row;*/
+     margin-top: 2rem;
+     margin-bottom: 1rem;
+ }
+ 
+ .h4Ok{
+     text-align: center;
+     text-decoration: overline;
+     font-size: 15px !important;
+ }
+ 
+ .grid-contenedor {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: 300px 300px;
+     grid-template-areas: 
+         "item1 item2 item3"
+         "item4 item5 item6"
+     ;
+ 
+ }
+ .grid-hijo {
+     display: flex;
+     flex-direction: column;
+     padding: 1rem;
+     text-align: center;
+    
+ }
+ .destacadoOutdor{   
+     letter-spacing: 1px;
+     background-color:#000 ; /*formato texto destacado de etiqueta */
+     color:#FFC300; 
+     font-weight: bold;
+     font-style: italic;
+     width: fit-content;
+     display: flex;
+     align-self: center;
+     border-radius: 5px;
+       
+ }
+ 
+ @for $i from 1 through 6 {
+    .item#{$i} { 
+        grid-area: item#{$i}; 
+    }
+}
+
+ /* *** efecto  en ventanas**** */
+        
+ .card__container-img {
+     overflow: hidden;
+   
+   }
+   
+   .card__img {
+     object-fit: cover;
+     transition: all 1s;
+   }
+   
+   .card__container-img:hover img {
+     transform: scale(1.3);
+   }
