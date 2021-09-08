@@ -668,7 +668,7 @@ th.bg-dark {
   .nosotrosGrid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 250px);
+    grid-template-rows: repeat(4, auto);
     gap: 2;
     font-size: 14px;
     grid-template-areas: "im1" "tex1" "img2" "tex2";
