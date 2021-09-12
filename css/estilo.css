@@ -449,6 +449,7 @@ th.bg-dark {
   font-size: 26px;
   font-weight: bold;
   margin: 2rem 0 1rem 2rem;
+  color: #FFC300;
 }
 
 .divcurso__spam {
@@ -460,17 +461,23 @@ th.bg-dark {
 .divcursoInverso {
   display: flex;
   border: solid black 1px;
+  color: #fff;
   margin: 1rem;
   width: 100%;
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-image: url(https://p4.wallpaperbetter.com/wallpaper/452/204/841/rock-climbing-grayscale-photo-of-man-climbing-on-mountain-wallpaper-preview.jpg);
+  background-size: cover;
   padding: 1rem;
   box-shadow: 2px 2px 5px black;
 }
 
 .divcurso__contenedor {
+  background-image: url(https://nanukexperience.es/wp-content/uploads/2019/11/viajes-de-escaldada-actividades-guiadas-nanuk.jpg);
+  background-size: cover;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -625,11 +632,11 @@ th.bg-dark {
 }
 
 .form-control {
-  box-shadow: 0px 0px 8px 1px #fcc300;
+  box-shadow: 0px 0px 8px 1px #fcc1006e;
 }
 
 .form-select {
-  box-shadow: 0px 0px 8px 1px #fcc300;
+  box-shadow: 0px 0px 8px 1px #fcc1006e;
 }
 
 .form-check .form-check-input {
@@ -803,6 +810,8 @@ th.bg-dark {
     align-items: center;
     padding: 2px;
     margin: .5rem;
+    background-image: url(https://gooddaysacramento.cbslocal.com/wp-content/uploads/sites/31326160/2012/12/rock-climbing.jpg?w=640);
+    background-size: cover;
   }
   .divcursoInverso {
     display: flex;

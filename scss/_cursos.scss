@@ -31,6 +31,7 @@
     font-size: 26px;
     font-weight: bold;
     margin: 2rem 0 1rem 2rem;
+    color: #FFC300;
 
 }
 .divcurso__spam{
@@ -41,17 +42,23 @@
 .divcursoInverso{
     display: flex;
     border: solid black 1px;
+    color: #fff;;
     margin: 1rem;
     width: 100%;
     flex-direction: row-reverse;
     justify-content: center;    
     align-items: center;
     text-align: center;
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/452/204/841/rock-climbing-grayscale-photo-of-man-climbing-on-mountain-wallpaper-preview.jpg);
+    background-size: cover;
     padding: 1rem;
     box-shadow: 2px 2px 5px black;
     
 }
 .divcurso__contenedor{
+    background-image: url(https://nanukexperience.es/wp-content/uploads/2019/11/viajes-de-escaldada-actividades-guiadas-nanuk.jpg);
+    background-size: cover;
+    color:#fff;
     display: flex;
     justify-content: center;    
     align-items: center;
