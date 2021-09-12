@@ -8,6 +8,9 @@
     max-width: 100%;
     flex-wrap: wrap;
     flex-direction:row;  
+    &__img{
+      box-shadow: 3px 3px 10px black;
+    }
  }
  .ordenInverso{
     display: flex;

@@ -11,7 +11,7 @@
 }
 
 .im1 {
-    grid-area: im1
+    grid-area: im1;
 }
 
 .tex1 {
@@ -32,6 +32,7 @@
     justify-items: center;
     align-items: center;  
     text-align: center;   
+    
 }
 .nosotrosGrid__hijo {
     display: flex;
@@ -39,13 +40,18 @@
     padding: 0.5rem;
     text-align: center;
    
-   
 }
 .nosotrosGrid__imagen{
     display: flex;
     text-align: center;
     justify-items: center;
+    align-items: center;
     margin: 0 auto;
+    box-shadow: 3px 3px 10px black; 
+    background-size: cover;
+    max-width: 400px;
+    max-height: 300px;
+   
 }
 
 

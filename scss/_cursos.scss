@@ -23,6 +23,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    box-shadow: 3px 3px 12px #FFC300;
    
 }
 
@@ -47,6 +48,7 @@
     align-items: center;
     text-align: center;
     padding: 1rem;
+    box-shadow: 2px 2px 5px black;
     
 }
 .divcurso__contenedor{
@@ -58,6 +60,7 @@
     width: 100%;
     padding: 1rem;
     text-align: center;
+    box-shadow: 2px 2px 5px black;
    
 }
 .divcurso__parrafo{
@@ -67,6 +70,7 @@
   }
   
 .divcurso__img{
+    box-shadow: 2px 2px 5px black;
     display: flex;    
     justify-content: center;
     

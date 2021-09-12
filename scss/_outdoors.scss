@@ -41,6 +41,7 @@
      display: flex;
      align-self: center;
      border-radius: 5px;
+     box-shadow: 3px 3px 10px black;
        
  }
  
@@ -60,6 +61,7 @@
    .card__img {
      object-fit: cover;
      transition: all 1s;
+     box-shadow: 3px 3px 10px black;
    }
    
    .card__container-img:hover img {
