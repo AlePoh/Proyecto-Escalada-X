@@ -259,7 +259,6 @@ footer p {
 .nosotrosGrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 300px 300px;
   gap: 2px;
   grid-template-areas: "im1 tex1 tex1" "tex2 tex2 img2";
 }
@@ -475,7 +474,7 @@ th.bg-dark {
 }
 
 .divcurso__contenedor {
-  background-image: url(https://nanukexperience.es/wp-content/uploads/2019/11/viajes-de-escaldada-actividades-guiadas-nanuk.jpg);
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9M3So-8YJKZ49Jd-ObNvDIwIQ_QTSi3j314JG0EYUfUFjUILfAMun9u2cCnituj6FO1A&usqp=CAU);
   background-size: cover;
   color: #fff;
   display: flex;
@@ -680,7 +679,6 @@ th.bg-dark {
   .hero__contem {
     width: 100%;
     font-size: 30px;
-    height: 200px;
   }
   .h2titulo {
     font-size: 25px;
@@ -698,8 +696,7 @@ th.bg-dark {
   .nosotrosGrid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, auto);
-    gap: 2;
+    gap: 3;
     font-size: 14px;
     grid-template-areas: "im1" "tex1" "img2" "tex2";
   }
@@ -709,7 +706,7 @@ th.bg-dark {
     justify-content: center;
   }
   .nosotrosGrid__imagen {
-    max-width: 300px;
+    width: 100%;
     align-items: center;
     justify-content: center;
   }
@@ -756,6 +753,10 @@ th.bg-dark {
     align-items: center;
     height: 90px;
     width: 140px;
+  }
+  .navbar > .container {
+    margin-left: 1rem;
+    margin-right: 2rem;
   }
   /*---------Outdoor--------------*/
   .grid-contenedor {
